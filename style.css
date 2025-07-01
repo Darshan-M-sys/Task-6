@@ -1,0 +1,114 @@
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #1e1e43, #1212d4);
+      color: white;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: backgroundFade 3s ease-in-out forwards;
+    }
+
+    @keyframes backgroundFade {
+      0% {
+        opacity: 0;
+        background-position: left;
+      }
+      100% {
+        opacity: 1;
+        background-position: right;
+      }
+    }
+
+    form {
+      background-color: #00ffff;
+      padding: 50px 40px;
+      border-radius: 20px;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+      animation: formPop 1.2s ease-in-out;
+    }
+
+    @keyframes formPop {
+      0% {
+        transform: scale(0.7);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    form label {
+      display: block;
+      text-align: left;
+      color: #000;
+      font-size: 18px;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    form input:focus,
+    form textarea:focus {
+      outline: none;
+      background-color: #e0f7fa;
+      box-shadow: 0 0 5px #0099cc;
+    }
+
+    form input[type="submit"] {
+      background-color: #3333cc;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: #000099;
+      transform: scale(1.05);
+      box-shadow: 0 0 10px white;
+    }
+
+    h1#data {
+      margin-top: 30px;
+      font-size: 24px;
+      color: yellow;
+      animation: fadeInText 1s ease forwards;
+    }
+
+    @keyframes fadeInText {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+  
+    @media (max-width: 500px) {
+      form {
+        width: 90%;
+        padding: 30px 20px;
+      }
+
+      form input,
+      form textarea {
+        width: 100%;
+      }
+    }

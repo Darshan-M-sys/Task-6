@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animated Form Validation</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+  <div>
+    <form id="contactForm">
+      <label for="name">Enter Your Name:</label>
+      <input type="text" name="name" id="name" required>
+
+      <label for="email">Enter Your Email:</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="message">Enter Your Message:</label>
+      <textarea name="message" id="message" rows="5" required></textarea>
+
+      <input type="submit" id="submit" value="Submit">
+    </form>
+
+    <h1 id="data"></h1>
+  </div>
+</body>
+</html>
